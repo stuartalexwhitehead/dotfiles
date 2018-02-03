@@ -18,7 +18,7 @@ if exists "zsh"; then
 else
   echo "installing" 
   brew install zsh
-  ln -sf $DOTFILES/zsh/zshrc $HOME/.zshrc
+  ln -sf $HOME/.dotfiles/zsh/zshrc $HOME/.zshrc
 fi
 
 echo -ne "Checking for Oh My Zsh… "
@@ -50,6 +50,16 @@ else
   brew install yarn
 fi
 
+echo -ne "Checking for nvim… "
+if exists "nvim"; then
+ echo "installed"
+else
+  echo "installing"
+  brew install nvim
+  curl -fLo ~/.config/nvim/autoload/plug.vim --create-dirs https://raw.githubusercontent.com/junegunn/vim-plug/master/plug.vim
+fi
+
 # Link things up
 echo "Linking things up"
-ln -sf $DOTFILES/git/gitconfig $HOME/.gitconfig
+ln -sf $HOME/.dotfiles/git/gitconfig $HOME/.gitconfig
+ln -sf $HOME/.dotfiles/nvim/init.vim $HOME/.config/nvim/init.vim

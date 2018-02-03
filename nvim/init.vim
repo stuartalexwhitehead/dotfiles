@@ -27,4 +27,11 @@ let g:airline_powerline_fonts = 1
 " Theme
 colorscheme nova
 
-
+" Tab Shortcuts
+nnoremap tk :tabfirst<CR>
+nnoremap tl :tabnext<CR>
+nnoremap th :tabprev<CR>
+nnoremap tj :tablast<CR>
+nnoremap tn :tabnew<CR>
+nnoremap tc :CtrlSpaceTabLabel<CR>
+nnoremap td :tabclose<CR>

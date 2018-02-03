@@ -5,13 +5,13 @@ export DOTFILES="$HOME/.dotfiles"
 ZSH="$HOME/.oh-my-zsh"
 ZSH_CUSTOM="$DOTFILES/zsh/custom"
 
-# Theme
-ZSH_THEME="spaceship"
-
 # Plugins
 plugins=(
   git
 )
+
+# Theme
+ZSH_THEME="spaceship"
 
 # Oh my zsh
 source $ZSH/oh-my-zsh.sh

@@ -59,6 +59,14 @@ else
   curl -fLo ~/.config/nvim/autoload/plug.vim --create-dirs https://raw.githubusercontent.com/junegunn/vim-plug/master/plug.vim
 fi
 
+echo -ne "Checking for pyenv… "
+if exists "pyenv"; then
+ echo "installed"
+else
+  echo "installing"
+  brew install pyenv pyenv-virtualenv
+fi
+
 # Link things up
 echo "Linking things up"
 ln -sf $HOME/.dotfiles/git/gitconfig $HOME/.gitconfig

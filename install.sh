@@ -71,3 +71,4 @@ fi
 echo "Linking things up"
 ln -sf $HOME/.dotfiles/git/gitconfig $HOME/.gitconfig
 ln -sf $HOME/.dotfiles/nvim/init.vim $HOME/.config/nvim/init.vim
+ln -sf $HOME/.dotfiles/vscode/settings.json "$HOME/Library/Application Support/Code/User/settings.json"

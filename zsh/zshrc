@@ -16,6 +16,9 @@ ZSH_THEME="spaceship"
 # Oh my zsh
 source $ZSH/oh-my-zsh.sh
 
+# vscode
+export PATH="$PATH:/Applications/Visual Studio Code.app/Contents/Resources/app/bin"
+
 # nvm
 export NVM_DIR="$DOTFILES/node/nvm"
 [ -s "$NVM_DIR/nvm.sh" ] && \. "$NVM_DIR/nvm.sh"  # This loads nvm

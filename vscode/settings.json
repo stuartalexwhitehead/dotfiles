@@ -1,0 +1,18 @@
+{
+    "workbench.colorTheme": "Nova",
+    "editor.fontSize": 15,
+    "editor.fontFamily": "'Space Mono For Powerline', Monaco, 'Courier New', monospace",
+    "editor.tabSize": 2,
+    "editor.renderWhitespace": "boundary",
+    "editor.cursorStyle": "block",
+    "files.exclude": {
+        "**/.git": true,
+        "**/.svn": true,
+        "**/.hg": true,
+        "**/CVS": true,
+        "**/.DS_Store": true
+    },
+    "workbench.startupEditor": "newUntitledFile",
+    "npm.packageManager": "yarn",
+    "window.newWindowDimensions": "maximized",
+}

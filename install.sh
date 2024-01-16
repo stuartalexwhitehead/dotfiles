@@ -67,6 +67,14 @@ else
   brew install pyenv pyenv-virtualenv
 fi
 
+echo -ne "Checking for just…"
+if exists "just"; then
+ echo "installed"
+else
+  echo "installing"
+  brew install just
+fi
+
 # Link things up
 echo "Linking things up"
 ln -sf $HOME/.dotfiles/git/gitconfig $HOME/.gitconfig

@@ -1,11 +1,12 @@
 [user]
   name = Stuart Whitehead
-  email = stuart@springload.co.nz
+  email = stuart@softmax.nz
+  signingkey = /Users/softmax/.ssh/id_ed25519.pub
 
 [core]
   autocrlf = input
   safecrlf = true
-	editor = nvim
+  editor = nvim
 
 [alias]
   co = checkout
@@ -73,3 +74,6 @@
   selected = normal
   separator = red bold
   linenumber = normal
+
+[gpg]
+  format = ssh

@@ -65,6 +65,6 @@ fi
 unset __mamba_setup
 # <<< mamba initialize <<<
 
+# see https://stackoverflow.com/questions/38534383/how-to-set-up-conda-installed-r-for-use-with-rstudio
 export RSTUDIO_WHICH_R="$HOME/micromamba/envs/rstudio/bin/R"
-
 alias rstudio='/Applications/RStudio.app/Contents/MacOS/RStudio &'

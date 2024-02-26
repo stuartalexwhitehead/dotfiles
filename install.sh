@@ -75,6 +75,14 @@ else
   brew install just
 fi
 
+echo -ne "Checking for micromamba…"
+if exists "micromamba"; then
+ echo "installed"
+else
+  echo "installing"
+  brew install micromamba
+fi
+
 # Link things up
 echo "Linking things up"
 ln -sf $HOME/.dotfiles/git/gitconfig $HOME/.gitconfig
